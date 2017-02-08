@@ -56,8 +56,8 @@ public class EmployeeController {
 
 	@GetMapping("/solution")
 
-	public String resolve(@RequestParam("userId") long uid, @RequestParam("ticketId") long tid, @RequestParam("solution") String soln,
-			@RequestParam("status") String state) throws ServiceException {
+	public String resolve(@RequestParam("userId") long uid, @RequestParam("ticketId") long tid,
+			@RequestParam("solution") String soln, @RequestParam("status") String state) throws ServiceException {
 		try {
 			AssignEmployeeService aes = new AssignEmployeeService();
 			aes.saveService(uid, tid, state, soln);
@@ -67,4 +67,32 @@ public class EmployeeController {
 		}
 		return "../employeeregister.jsp";
 	}
+
+	@GetMapping("/reassign")
+
+	public String reassign(@RequestParam("transId") long tid, @RequestParam("userId") long uid,
+			@RequestParam("empId") long eid, @RequestParam("reply") String reply, @RequestParam("state") String state)
+			throws ServiceException {
+		try {
+			AssignEmployeeService aes = new AssignEmployeeService();
+			aes.saveService(uid, tid, eid, reply, state);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "../employeeregister.jsp";
+	}
+
+	@GetMapping("/adminDelete")
+	public String admin(@RequestParam("tid") long id) {
+		try {
+			AssignEmployeeService aes = new AssignEmployeeService();
+			aes.saveService(id);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "../employeeregister.jsp";
+
+	}
+
 }
