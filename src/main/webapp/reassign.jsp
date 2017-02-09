@@ -89,6 +89,9 @@
 			</div>
 		</div>
 	</div>
+		<h2 style="margin-left: 395px">
+		<b><a href="employeeticket.jsp">more</a></b>
+	</h2>
 
 
 </body>

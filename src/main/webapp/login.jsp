@@ -12,9 +12,9 @@
 </head>
 <body>
 	<h3>Have you ever created tickets</h3>
-	<form>
+	<a href="../usertickets.jsp">
 		<button type="button" class="btn btn-success">Yes</button>
-	</form>
+	</a>
 	<a href="../enterticketdetails.jsp">
 		<button type="button" class="btn btn-danger">No</button>
 	</a>

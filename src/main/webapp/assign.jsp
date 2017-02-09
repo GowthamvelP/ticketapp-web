@@ -2,15 +2,6 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" media="screen"
-	href="//d85wutc1n854v.cloudfront.net/live/css/screen_preview_legacy.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <title>ASSIGN EMPLOYEE</title>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -104,8 +95,7 @@
 	<h2 style="margin-left: 395px">
 		<b><a href="../reassign.jsp">more</a></b>
 	</h2>
-</body>
-<body bgcolor="FFE9E4 ">
+
 
 
 </body>

@@ -21,7 +21,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>employee details</title>
+<title>User details</title>
 </head>
 <body>
 	<h4 style="margin-left: 175px">USER REGISTER</h4>
