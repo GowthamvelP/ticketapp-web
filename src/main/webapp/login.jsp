@@ -11,6 +11,7 @@
 <title>Login Credentials</title>
 </head>
 <body>
+<h3> Welcome ${LOGGED_IN_USER.name} !!!( <a href="../check/logout">Logout</a>)</h3>
 	<h3>Have you ever created tickets</h3>
 	<a href="../usertickets.jsp">
 		<button type="button" class="btn btn-success">Yes</button>

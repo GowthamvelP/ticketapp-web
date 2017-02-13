@@ -17,19 +17,21 @@
 </head>
 <body>
 
-	<h3>Enter your Id here</h3>
+	<h3>Click Enter to know your details</h3>
 
 	<form accept-charset="UTF-8" role="form" action="/users/ticketdetails">
 		<fieldset>
 			<div class="form-group">
 				<div align="center">
-					<input class="form-control" placeholder="UserId" name="userId"
-						type="text" required style="width: 300px;" align="center">
+					<div class="form-group">
+						<input class="form-control" placeholder="UserId" name="userId"
+							type="hidden" value="${LOGGED_IN_USER.id}">
+					</div>
 
 					<div class="checkbox" style=""></div>
 
 					<input class="btn btn-lg btn-success btn-block" type="submit"
-						value="Submit" style="width: 150px;" align="center">
+						value="ENTER" style="width: 150px;" align="center">
 				</div>
 			</div>
 		</fieldset>

@@ -40,7 +40,7 @@ public class EmployeeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "../employeeregister.jsp";
+		return "../assign.jsp";
 	}
 
 	@GetMapping("/assign")
@@ -55,7 +55,7 @@ public class EmployeeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "../employeeregister.jsp";
+		return "../assign.jsp";
 	}
 
 	@GetMapping("/solution")
@@ -69,7 +69,7 @@ public class EmployeeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "../employeeregister.jsp";
+		return "../assign.jsp";
 	}
 
 	@GetMapping("/reassign")
@@ -95,15 +95,16 @@ public class EmployeeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "../employeeregister.jsp";
+		return "../assign.jsp";
 
 	}
+
 	@GetMapping("/ticketdetails")
 	public String details(@RequestParam("empId") long eid, @RequestParam("userId") long uid, ModelMap map)
 			throws Exception {
 		try {
 			AssignEmployeeService create = new AssignEmployeeService();
-			List<EmployeeTicket> i = create.saveService(eid,uid);
+			List<EmployeeTicket> i = create.saveService(eid, uid);
 			map.addAttribute("list", i);
 			return "../employeeticket.jsp";
 		} catch (ServiceException e) {

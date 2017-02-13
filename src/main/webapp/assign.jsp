@@ -15,8 +15,10 @@
 <title>employee details</title>
 </head>
 <body>
+	<h3>
+		Welcome ${LOGGED_IN_EMPLOYEE.name} !!!( <a href="../check/logout">Logout</a>)
+	</h3>
 	<h4 style="margin-left: 175px">ASSIGN EMPLOYEE</h4>
-
 	<div class="col-md-4 col-md-offset-1"
 		style="top: 45px; margin-left: 160px;">
 		<div class="panel panel-default">
@@ -36,7 +38,7 @@
 						</div>
 						<div class="form-group">
 							<input class="form-control" placeholder="Employee Id"
-								name="empId" type="text">
+								name="empId" type="hidden" value="${LOGGED_IN_EMPLOYEE.id}">
 						</div>
 						<div class="form-group">
 							<input class="form-control" placeholder="Reply" name="reply"
@@ -48,7 +50,7 @@
 						</div>
 						<div class="checkbox"></div>
 						<input class="btn btn-lg btn-success btn-block" type="submit"
-							value="Register">
+							value="Assign">
 					</fieldset>
 				</form>
 			</div>
@@ -85,7 +87,7 @@
 						</div>
 						<div class="checkbox"></div>
 						<input class="btn btn-lg btn-primary btn-block" type="submit"
-							value="Login">
+							value="Give Solution">
 					</fieldset>
 				</form>
 			</div>

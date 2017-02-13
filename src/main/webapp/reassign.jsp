@@ -24,6 +24,9 @@
 <title>employee details</title>
 </head>
 <body>
+	<h3>
+		Welcome ${LOGGED_IN_EMPLOYEE.name} !!!( <a href="../check/logout">Logout</a>)
+	</h3>
 	<h4 style="margin-left: 175px">RE-ASSIGN EMPLOYEE</h4>
 
 	<div class="col-md-4 col-md-offset-1"
@@ -57,7 +60,7 @@
 						</div>
 						<div class="checkbox"></div>
 						<input class="btn btn-lg btn-success btn-block" type="submit"
-							value="Register">
+							value="Reassign">
 					</fieldset>
 				</form>
 			</div>
@@ -89,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-		<h2 style="margin-left: 395px">
+	<h2 style="margin-left: 395px">
 		<b><a href="employeeticket.jsp">more</a></b>
 	</h2>
 

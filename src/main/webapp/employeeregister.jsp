@@ -23,8 +23,7 @@
 				<h3 class="panel-title">Sign Up</h3>
 			</div>
 			<div class="panel-body">
-				<form accept-charset="UTF-8" role="form"
-					action="/employee/register">
+				<form accept-charset="UTF-8" role="form" action="/employee/register">
 					<fieldset>
 						<div class="form-group">
 							<input class="form-control" placeholder="Role Id" name="roleId"
@@ -56,7 +55,7 @@
 	</div>
 
 
-
+	<h5 style="margin-left: 740px">${INVALID}</h5>
 	<h4 style="margin-left: 740px">EMPLOYEE LOGIN</h4>
 
 	<div class="col-md-4 col-md-offset-1" style="top: 15px;">
@@ -65,8 +64,7 @@
 				<h3 class="panel-title">Sign in</h3>
 			</div>
 			<div class="panel-body">
-				<form accept-charset="UTF-8" role="form"
-					action="/check/emplogin">
+				<form accept-charset="UTF-8" role="form" action="/check/emplogin">
 					<fieldset>
 						<div class="form-group">
 							<input class="form-control" placeholder="E-mail" name="emailId"

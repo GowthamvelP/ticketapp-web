@@ -24,7 +24,7 @@
 			    	<form accept-charset="UTF-8" role="form" action="/create/ticket">
                     <fieldset>                  
 			    	  	<div class="form-group">
-			    			    <input class="form-control" placeholder="UserId" name="userId" type="text">
+			    			    <input class="form-control" placeholder="UserId" name="userId" type="hidden" value="${LOGGED_IN_USER.id}">
 			    		</div>
 			    		<div class="form-group">
 			    			<input class="form-control" placeholder="Type" name="Type" type="text" value="">

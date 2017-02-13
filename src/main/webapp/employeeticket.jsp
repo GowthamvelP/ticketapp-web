@@ -17,15 +17,17 @@
 </head>
 <body>
 
-	<h3>Enter your Employee Id here</h3>
-
+	<h3>
+		Welcome ${LOGGED_IN_EMPLOYEE.name} !!!( <a href="../check/logout">Logout</a>)
+	</h3>
 	<form accept-charset="UTF-8" role="form"
 		action="/employee/ticketdetails">
 		<fieldset>
 			<div class="form-group">
 				<div align="center">
 					<input class="form-control" placeholder="Employee Id" name="empId"
-						type="text" required style="width: 300px;" align="center">
+						type="hidden" required style="width: 300px;" align="center"
+						value="${LOGGED_IN_EMPLOYEE.id}">
 
 					<div class="form-group">
 						<div align="center">
@@ -48,6 +50,7 @@
 		<thead>
 			<tr>
 				<th>Id</th>
+				<th>TicketId</th>
 				<th>Reply</th>
 
 
@@ -57,6 +60,7 @@
 			<c:forEach var="c" items="${list}" varStatus="i">
 				<tr>
 					<td>${c.id}</td>
+					<td>${c.ticket.id}</td>
 					<td>${c.reply}</td>
 				</tr>
 			</c:forEach>
